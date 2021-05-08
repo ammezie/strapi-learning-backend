@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "strapi_courses",
+  "info": {
+    "name": "strapi-course",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "course_title": {
+      "type": "string"
+    },
+    "course_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "course_video": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "short_description": {
+      "type": "text"
+    },
+    "long_description": {
+      "type": "richtext"
+    }
+  }
+}

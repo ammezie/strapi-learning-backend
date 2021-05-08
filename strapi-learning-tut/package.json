@@ -1,0 +1,14 @@
+{
+  "name": "strapi-learning-tut",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "gridsome": "^0.7.0",
+    "vuex": "^3.6.0"
+  }
+}
